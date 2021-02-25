@@ -31,9 +31,15 @@ git reset --soft HEAD^
 
 ## git 标签
 
+```
 git tag -a v1.4 -m "my version 1.4"
 git push <remote> --tags
+```
+
+> tag 和具体某次 commit 有关，和分支无关
 
 ## git merge --no-ff
 
 Git 会用 Fast forward 模式，但这种模式下，删除分支后，会丢掉分支信息
+
+te
