@@ -20,3 +20,4 @@ declare global {
 - 当 useCapture(设为 true) 时，沿着 DOM 树向上冒泡的事件，不会触发 listener
 
 master
+lllssss
