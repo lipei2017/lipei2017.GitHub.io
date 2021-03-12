@@ -41,5 +41,3 @@ git push <remote> --tags
 ## git merge --no-ff
 
 Git 会用 Fast forward 模式，但这种模式下，删除分支后，会丢掉分支信息
-
-te
