@@ -41,3 +41,20 @@ git push <remote> --tags
 ## git merge --no-ff
 
 Git 会用 Fast forward 模式，但这种模式下，删除分支后，会丢掉分支信息
+
+## 版本
+
+> HEAD 表示当前版本，上一个版本 HEAD^，上上个版本 HEAD^^,上 100 个版本 HEAD~100
+> HEAD 指向的版本就是当前版本，因此，Git 允许我们在版本的历史之间穿梭，使用命令 git reset --hard commit_id。
+> 穿梭前，用 git log 可以查看提交历史，以便确定要回退到哪个版本。
+> 要重返未来，用 git reflog 查看命令历史，以便确定要回到未来的哪个版本。
+
+## 版本回退
+
+```
+git reset --hard HEAD^
+```
+
+## 版本库
+
+![image](http://blog.shuyi7.top/img/repository.jpg)

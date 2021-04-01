@@ -23,4 +23,11 @@ declare global {
 
 > global.less 里@import 对应的样式
 
-### 
+### [BUG] 可以编辑表格的 rowKey 只能为 number 类型，如果是 string 就出现数据错误
+
+### react 依赖
+
+```js
+[] === [];
+false;
+```
