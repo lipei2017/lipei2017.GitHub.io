@@ -69,8 +69,7 @@ git checkout -- readme.txt
 
 ```
 $ git reset HEAD readme.txt
-Unstaged changes after reset:
-M	readme.txt
+
 ```
 
 - 场景 1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令 git checkout -- file。
@@ -78,3 +77,45 @@ M	readme.txt
 - 场景 2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令 git reset HEAD <file>，就回到了场景 1，第二步按场景 1 操作。
 
 - 场景 3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+> 从暂存区恢复工作区，
+
+```
+git resotre --worktree readme.txt
+```
+
+> 从 master 恢复暂存区
+
+```
+git restore --staged readme.txt
+```
+
+> 从 master 同时恢复工作区和暂存区
+
+```
+git restore --source=HEAD --staged --worktree readme.txt
+```
+
+## 添加远程仓库
+
+```
+git remote add origin git@github.com:michaelliao/learngit.git
+```
+
+## 解决冲突
+
+- 当 Git 无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+
+- 解决冲突就是把 Git 合并失败的文件手动编辑为我们希望的内容，再提交。
+
+- 用 git log --graph 命令可以看到分支合并图。
+
+## 分支管理策略
+
+> Bug 分支
+
+- 修复 bug 时，我们会通过创建新的 bug 分支进行修复，然后合并，最后删除；
+
+- 当手头工作没有完成时，先把工作现场 git stash 一下，然后去修复 bug，修复后，再 git stash pop，回到工作现场；
+
+- 在 master 分支上修复的 bug，想要合并到当前 dev 分支，可以用 git cherry-pick <commit>命令，把 bug 提交的修改“复制”到当前分支，避免重复劳动。
