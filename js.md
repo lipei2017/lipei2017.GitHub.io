@@ -66,3 +66,5 @@ function Food(name, price) {
 console.log(new Food('cheese', 5).name);
 // expected output: "cheese"
 ```
+
+## 并不能说对象有原型，而只能说对象的构造求有原型
