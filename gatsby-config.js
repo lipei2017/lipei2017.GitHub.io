@@ -1,15 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "sy7-blog",
+    title: 'sy7-blog',
   },
+
   plugins: [
     {
-      resolve: "gatsby-source-contentful",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        accessToken: "",
-        spaceId: "",
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
-    "gatsby-plugin-emotion",
+    `gatsby-transformer-remark`,
+    'gatsby-plugin-emotion',
   ],
 };
