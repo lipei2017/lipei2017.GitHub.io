@@ -1,0 +1,26 @@
+{
+  "name": "sy7-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "sy7-blog",
+  "author": "lipei",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "gatsby": "^3.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
