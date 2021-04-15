@@ -1,3 +1,8 @@
+---
+title: 'js.note'
+date: '2021-04-15'
+---
+
 ### Array.prototype.slice()
 
 slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。
