@@ -1,0 +1,2 @@
+(self.webpackChunksy7_blog=self.webpackChunksy7_blog||[]).push([[682],{5518:function(t,e,n){"use strict";n.r(e);n(7294);var o=n(7198),s=n(5734);e.default=function(t){var e=t.data;return(0,s.tZ)(o.Z,null,(0,s.tZ)("h1",null,"About ",e.site.siteMetadata.title),(0,s.tZ)("p",null,"We're the only site running on your computer dedicated to showing the best photos and videos of pandas eating lots of food."))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-1aa2cb7a71542f50e8fd.js.map
